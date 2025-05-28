@@ -3,15 +3,18 @@ python setup.py develop
 
 # Useage
 ## debug_line
-debug_line output the debug information of the input variable and the line of the code where the variable is defined.
-```python
 
+debug_line output the debug information of the input variable and the line of the code where the variable is defined.
+
+Add code like this:
+```python
 from debug import debug_line
 
 print("batch_dict",debug_line(batch_dict))
 ```
 
-```json
+Output:
+```txt
  batch_dict  atch_dict  {
     "frame_id": "(3,)",
     "calib": [<pcdet.utils.calibration_kitti.Calibration object at 0x7f441010ac40>,<pcdet.utils.calibration_kitti.Calibration object at 0x7f441028acd0>,<pcdet.utils.calibration_kitti.Calibration object at 0x7f441028a5b0>
@@ -55,12 +58,16 @@ print("batch_dict",debug_line(batch_dict))
 ```
 
 ## debug_path
+debug_path output the debug information of the code path.
+
+Add code like this:
 ```python
 from debug import debug_path
 print("debug_path",debug_path())
 ```
 
-````json
+Output:
+```txt
 debug_path /home/name/project/XXX/tools/../pcdet/datasets/processor/point_feature_encoder.py:56
 /home/name/project/XXX/tools/../pcdet/datasets/processor/point_feature_encoder.py:31
 /home/name/project/XXX/tools/../pcdet/models/detectors/voxel_rcnn_ssl.py:798
