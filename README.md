@@ -15,7 +15,7 @@ print("batch_dict",debug_line(batch_dict))
 
 Output:
 ```txt
- batch_dict  atch_dict  {
+ batch_dict   {
     "frame_id": "(3,)",
     "calib": [<pcdet.utils.calibration_kitti.Calibration object at 0x7f441010ac40>,<pcdet.utils.calibration_kitti.Calibration object at 0x7f441028acd0>,<pcdet.utils.calibration_kitti.Calibration object at 0x7f441028a5b0>
     ],
